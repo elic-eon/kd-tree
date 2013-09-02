@@ -22,7 +22,7 @@ Example : `tree1.clear()`
 You can use this function to print a point  
 Example :  
 ```
-KDIterator nearest = tree.nearest2D(0, 0);
+KDIterator nearest = tree.nearest2D(0, 0);  
 nearest.show();
 ```  
 it will pintf `A( x, y )` or other depend on your tree  
@@ -32,6 +32,6 @@ it will pintf `A( x, y )` or other depend on your tree
 This function can calculate distence between two points  
 Example :  
 ```
-KDIterator nearest = tree.nearest2D(0, 0);
+KDIterator nearest = tree.nearest2D(0, 0);  
 double distence = dis(0, 0, nearest);
 ```  
