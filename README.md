@@ -1,5 +1,8 @@
-kd-tree
-=======
+kd-tree Useage
+==============
+##Must include headfile
+`#include"kdtree.h"`
+
 ####class KDTree
 1. `void insert2D(double, double, char *)`
 You can insert a pair (x , y) into the 2D-tree
@@ -15,6 +18,7 @@ It will return a KDIterator point the nearest point
 3. `void clear()`
 You can use the function to clear all point in the tree
 Example : `tree1.clear()`
+
 ####class KDIterator
 1. `void show()`
 You can use this function to print a point
@@ -24,6 +28,7 @@ KDIterator nearest = tree.nearest2D(0, 0);
 nearest.show();
 ```
 it will pintf `A( x, y )` or other depend on your tree
+
 ####Other function
 1. `double dis(double, double, KDIterator&)`
 This function can calculate distence between two points
