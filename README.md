@@ -1,7 +1,12 @@
-kd-tree Useage
-==============
+kd-tree
+=======
+
+Must include headfile
+  `#include"kdtree.h"`
+
 ##Tutorial
 
+1. Manually
 ####Install
 
 1. `g++ -c kdtree.cpp -o kdtree.o`
@@ -10,6 +15,18 @@ kd-tree Useage
 ####Usage
 
 `g++ target.cpp kdtree.a -o out.a`
+
+2. Makefile
+  `$ make` to setup libary and create a example or you can only create libary.
+
+  `$ make install` install library than you can use g++ to use that library.
+  Example : `g++ test.cpp kdtree.a -o test`
+
+  `$ make example` if you have installed library you can create an example to ensure library was installed correctly.
+
+  if you want to clean lib file
+  `$ make clean`
+
 
 ####class KDTree
 
@@ -30,15 +47,6 @@ It will return a KDIterator point the nearest point
 You can use the function to clear all point in the tree
 Example : `tree1.clear()`
 
-
-####class KDIterator
-
-1. `void show()`
-You can use this function to print a point
-Example :
-=======
-kd-tree
-=======
 
 ####class KDTree
 1. `void insert2D(double, double, char *)`
