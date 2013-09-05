@@ -8,12 +8,10 @@ Must include headfile
 
 1. Manually
 ####Install
-
 1. `g++ -c kdtree.cpp -o kdtree.o`
 2. `ar rcs kdtree.a kdtree.o`
 
 ####Usage
-
 `g++ target.cpp kdtree.a -o out.a`
 
 2. Makefile
