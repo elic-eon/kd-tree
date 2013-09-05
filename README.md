@@ -7,23 +7,21 @@ Must include headfile
 ##Tutorial
 
 1. Manually
-####Install
-1. `g++ -c kdtree.cpp -o kdtree.o`
-2. `ar rcs kdtree.a kdtree.o`
 
-####Usage
-`g++ target.cpp kdtree.a -o out.a`
+  ####Install
+  1. `g++ -c kdtree.cpp -o kdtree.o`
+  2. `ar rcs kdtree.a kdtree.o`
+  
+  ####Usage
+  `g++ target.cpp kdtree.a -o out.a`
 
-2. Makefile
-  `$ make` to setup libary and create a example or you can only create libary.
-
-  `$ make install` install library than you can use g++ to use that library.
-  Example : `g++ test.cpp kdtree.a -o test`
-
-  `$ make example` if you have installed library you can create an example to ensure library was installed correctly.
-
-  if you want to clean lib file
-  `$ make clean`
+2. Makefile  
+`$ make` to setup libary and create a example or you can only create libary.  
+`$ make install` install library than you can use g++ to use that library.  
+Example : `g++ test.cpp kdtree.a -o test`  
+`$ make example` if you have installed library you can create an example to ensure library was installed correctly.  
+if you want to clean lib file  
+`$ make clean`  
 
 
 ####class KDTree
